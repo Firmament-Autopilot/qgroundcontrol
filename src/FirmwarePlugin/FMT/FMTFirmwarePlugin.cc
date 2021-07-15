@@ -173,12 +173,12 @@ QString FMTFirmwarePlugin::flightMode(uint8_t base_mode, uint32_t custom_mode) c
     QString flightMode = "Unknown";
 
     if (base_mode & MAV_MODE_FLAG_CUSTOM_MODE_ENABLED) {
-        union px4_custom_mode px4_mode;
-        px4_mode.data = custom_mode;
+        union fmt_custom_mode fmt_mode;
+        fmt_mode.data = custom_mode;
 
         bool found = false;
         foreach (const FlightModeInfo_t& info, _flightModeInfoList) {
-            if (info.main_mode == px4_mode.main_mode && info.sub_mode == px4_mode.sub_mode) {
+            if (info.main_mode == fmt_mode.main_mode && info.sub_mode == fmt_mode.sub_mode) {
                 flightMode = *info.name;
                 found = true;
                 break;
@@ -204,14 +204,14 @@ bool FMTFirmwarePlugin::setFlightMode(const QString& flightMode, uint8_t* base_m
     bool found = false;
     foreach (const FlightModeInfo_t& info, _flightModeInfoList) {
         if (flightMode.compare(info.name, Qt::CaseInsensitive) == 0) {
-            union px4_custom_mode px4_mode;
+            union fmt_custom_mode fmt_mode;
 
-            px4_mode.data = 0;
-            px4_mode.main_mode = info.main_mode;
-            px4_mode.sub_mode = info.sub_mode;
+            fmt_mode.data = 0;
+            fmt_mode.main_mode = info.main_mode;
+            fmt_mode.sub_mode = info.sub_mode;
 
             *base_mode = MAV_MODE_FLAG_CUSTOM_MODE_ENABLED;
-            *custom_mode = px4_mode.data;
+            *custom_mode = fmt_mode.data;
 
             found = true;
             break;
@@ -249,10 +249,10 @@ bool FMTFirmwarePlugin::sendHomePositionToVehicle(void)
 
 FactMetaData* FMTFirmwarePlugin::getMetaDataForFact(QObject* parameterMetaData, const QString& name, MAV_TYPE vehicleType)
 {
-    FMTParameterMetaData* px4MetaData = qobject_cast<FMTParameterMetaData*>(parameterMetaData);
+    FMTParameterMetaData* fmtMetaData = qobject_cast<FMTParameterMetaData*>(parameterMetaData);
 
-    if (px4MetaData) {
-        return px4MetaData->getMetaDataForFact(name, vehicleType);
+    if (fmtMetaData) {
+        return fmtMetaData->getMetaDataForFact(name, vehicleType);
     } else {
         qWarning() << "Internal error: pointer passed to FMTFirmwarePlugin::getMetaDataForFact not FMTParameterMetaData";
     }
@@ -262,10 +262,10 @@ FactMetaData* FMTFirmwarePlugin::getMetaDataForFact(QObject* parameterMetaData, 
 
 void FMTFirmwarePlugin::addMetaDataToFact(QObject* parameterMetaData, Fact* fact, MAV_TYPE vehicleType)
 {
-    FMTParameterMetaData* px4MetaData = qobject_cast<FMTParameterMetaData*>(parameterMetaData);
+    FMTParameterMetaData* fmtMetaData = qobject_cast<FMTParameterMetaData*>(parameterMetaData);
 
-    if (px4MetaData) {
-        px4MetaData->addMetaDataToFact(fact, vehicleType);
+    if (fmtMetaData) {
+        fmtMetaData->addMetaDataToFact(fact, vehicleType);
     } else {
         qWarning() << "Internal error: pointer passed to FMTFirmwarePlugin::addMetaDataToFact not FMTParameterMetaData";
     }
@@ -588,11 +588,11 @@ QGCCameraControl* FMTFirmwarePlugin::createCameraControl(const mavlink_camera_in
 
 uint32_t FMTFirmwarePlugin::highLatencyCustomModeTo32Bits(uint16_t hlCustomMode)
 {
-    union px4_custom_mode px4_cm;
-    px4_cm.data = 0;
-    px4_cm.custom_mode_hl = hlCustomMode;
+    union fmt_custom_mode fmt_cm;
+    fmt_cm.data = 0;
+    fmt_cm.custom_mode_hl = hlCustomMode;
 
-    return px4_cm.data;
+    return fmt_cm.data;
 }
 
 QString FMTFirmwarePlugin::_getLatestVersionFileUrl(Vehicle* vehicle){

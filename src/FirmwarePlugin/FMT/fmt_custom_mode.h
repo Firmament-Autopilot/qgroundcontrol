@@ -71,7 +71,7 @@ enum FMT_CUSTOM_SUB_MODE_POSCTL {
     FMT_CUSTOM_SUB_MODE_POSCTL_ORBIT
 };
 
-union px4_custom_mode {
+union fmt_custom_mode {
 	struct {
 		uint16_t reserved;
 		uint8_t main_mode;
