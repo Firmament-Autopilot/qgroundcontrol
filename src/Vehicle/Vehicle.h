@@ -891,6 +891,7 @@ public:
     bool            mavPresent              () { return _mav != nullptr; }
     int             rcRSSI                  () { return _rcRSSI; }
     bool            px4Firmware             () const { return _firmwareType == MAV_AUTOPILOT_PX4; }
+    bool            fmtFirmware             () const { return _firmwareType == MAV_AUTOPILOT_FMT; }
     bool            apmFirmware             () const { return _firmwareType == MAV_AUTOPILOT_ARDUPILOTMEGA; }
     bool            genericFirmware         () const { return !px4Firmware() && !apmFirmware(); }
     bool            connectionLost          () const { return _connectionLost; }
