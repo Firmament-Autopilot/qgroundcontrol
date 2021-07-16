@@ -316,6 +316,23 @@ SetupPage {
                         }
 
                         QGCRadioButton {
+                            id:             fmtFlightStack
+                            exclusiveGroup: firmwareGroup
+                            text:           qsTr("FMT Flight Stack")
+                            textBold:       !_defaultFirmwareIsPX4
+                            checked:        false
+                            visible:        !_singleFirmwareMode && !px4Flow
+
+                            onClicked: {
+                                firmwareType:   FirmwareUpgradeController.CustomFirmware
+
+                                firmwareVersionCombo.currentIndex = 3
+                                firmwareVersionWarningLabel.visible = false
+                            }
+                        }
+
+
+                        QGCRadioButton {
                             id:             px4FlightStackRadio2
                             exclusiveGroup: _defaultFirmwareIsPX4 ? null : firmwareGroup
                             text:           qsTr("PX4 Flight Stack ")
@@ -326,6 +343,7 @@ SetupPage {
                                 parent.firmwareVersionChanged(firmwareTypeList)
                             }
                         }
+                        
 
                         QGCComboBox {
                             id:             vehicleTypeSelectionCombo
