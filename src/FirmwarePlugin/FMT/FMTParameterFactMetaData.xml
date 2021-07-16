@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<parameters>
+  <version>3</version>
+  <parameter_version_major>1</parameter_version_major>
+  <parameter_version_minor>15</parameter_version_minor>
+  <group name="SYSTEM">
+    <parameter default="0" name="BLOG_MODE" type="INT32">
+      <short_desc>Log Level</short_desc>
+    </parameter>
+  </group>
+  <group name="CALIB">
+   <parameter default="0.0" name="GYRO0_XOFF" type="FLOAT">
+      <short_desc>GYRO - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="GYRO0_YOFF" type="FLOAT">
+      <short_desc>GYRO - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="GYRO0_ZOFF" type="FLOAT">
+      <short_desc>GYRO - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC0_XOFF" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC0_YOFF" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC0_ZOFF" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="ACC0_XXSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="ACC0_YYSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="ACC0_ZZSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC0_XYSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC0_XZSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC0_YZSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG0_XOFF" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG0_YOFF" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG0_ZOFF" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="MAG0_XXSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="MAG0_YYSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="MAG0_ZZSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG0_XYSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG0_XZSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG0_YZSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+
+    <parameter default="0.0" name="GYRO1_XOFF" type="FLOAT">
+      <short_desc>GYRO - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="GYRO1_YOFF" type="FLOAT">
+      <short_desc>GYRO - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="GYRO1_ZOFF" type="FLOAT">
+      <short_desc>GYRO - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC1_XOFF" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC1_YOFF" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC1_ZOFF" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="ACC1_XXSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="ACC1_YYSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="ACC1_ZZSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC1_XYSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC1_XZSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="ACC1_YZSCALE" type="FLOAT">
+      <short_desc>ACC - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG1_XOFF" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG1_YOFF" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG1_ZOFF" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="MAG1_XXSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="MAG1_YYSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="1.0" name="MAG1_ZZSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG1_XYSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG1_XZSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="MAG1_YZSCALE" type="FLOAT">
+      <short_desc>MAG - OFFSET</short_desc>
+    </parameter>
+    <parameter default="0.0" name="LEVEL_XOFF" type="FLOAT">
+      <short_desc>Level Calibration</short_desc>
+    </parameter>
+    <parameter default="0.0" name="LEVEL_YOFF" type="FLOAT">
+      <short_desc>Level Calibration</short_desc>
+    </parameter>
+    <parameter default="0.0" name="LEVEL_ZOFF" type="FLOAT">
+      <short_desc>Level Calibration</short_desc>
+    </parameter>
+  </group>
+  <group name="INS">
+    <parameter default="1" name="USE_EXTERN_FILTE" type="INT8">
+      <short_desc>User external filter for IMU</short_desc>  
+    </parameter>
+  </group>
+  <group name="FMS">
+    <parameter default="0.15" name="THROTTLE_DZ" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.15" name="YAW_DZ" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="ROLL_DZ" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="PITCH_DZ" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.95" name="XY_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="1" name="Z_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="5.0" name="VEL_XY_LIM" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="2.5" name="VEL_Z_LIM" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="2.5" name="YAW_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="1.047197551196597" name="YAW_RATE_LIM" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.5235987755982983" name="ROLL_PITCH_LIM" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+  </group>
+  <group name="CONTROL">
+    <parameter default="1.4" name="VEL_XY_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.2" name="VEL_XY_I" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.2" name="VEL_XY_D" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.6" name="VEL_Z_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="VEL_Z_I" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.0" name="VEL_Z_D" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="-1" name="VEL_XY_I_MIN" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="1" name="VEL_XY_I_MAX" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="-1" name="VEL_XY_D_MIN" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="1" name="VEL_XY_D_MAX" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="-0.15" name="VEL_Z_I_MIN" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.15" name="VEL_Z_I_MAX" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="-0.1" name="VEL_Z_D_MIN" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="VEL_Z_D_MAX" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="5" name="ROLL_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="5" name="PITCH_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.5235987755982983" name="ROLL_PITCH_CMD_LIM" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="ROLL_RATE_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="PITCH_RATE_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.15" name="YAW_RATE_P" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="ROLL_RATE_I" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="PITCH_RATE_I" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.075" name="YAW_RATE_I" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.003" name="ROLL_RATE_D" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.003" name="PITCH_RATE_D" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.001" name="YAW_RATE_D" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="-0.1" name="RATE_I_MIN" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="RATE_I_MAX" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="-0.1" name="RATE_D_MIN" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="0.1" name="RATE_D_MAX" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="1.570796326794895" name="P_Q_CMD_LIM" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+    <parameter default="3.14159265358979" name="R_CMD_LIM" type="FLOAT">
+      <short_desc>CONTROL PID value</short_desc>
+    </parameter>
+  </group>
+</parameters>

@@ -24,7 +24,7 @@ QGCUASFileView::QGCUASFileView(QWidget *parent, Vehicle* vehicle)
 {
     _ui.setupUi(this);
 
-    if (vehicle->px4Firmware()) {
+    if (vehicle->px4Firmware() || vehicle->fmtFirmware()) {
         _ui.progressBar->reset();
 
         // Connect UI signals
